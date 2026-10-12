@@ -6,7 +6,7 @@ This repository contains electronic-nose measurements of Danggui (DG), Duhuo (DH
 
 The raw archive contains 550 measurement files: 50 files for each of 11 composition labels (pure DG, pure DH, and DG:DH ratios from 1:9 to 9:1). The classification benchmark uses 350 files from seven labels. Two pairs of byte-identical responses share group IDs, giving 348 evaluation groups. The group definition records file identity and exact duplication; it does not establish specimen, preparation-batch, session, date, or device independence.
 
-The seven benchmark classes are DG, DG 1:9 DH, DG 3:7 DH, DG 5:5 DH, DG 7:3 DH, DG 9:1 DH, and DH. The four other mixture ratios remain available in the raw archive. Two additional debugging response files are excluded.
+The seven benchmark classes are DG, DG 1:9 DH, DG 3:7 DH, DG 5:5 DH, DG 7:3 DH, DG 9:1 DH, and DH. The four other mixture ratios remain available in the raw archive. The normalized dataset contains the 350 source IDs listed in its manifest.
 
 Raw exports contain eight sensor columns and, in some files, two auxiliary columns. Acquisition was planned for 150 seconds. Short records were padded by repeating the last measured row. The supplied normalized responses have shape `350 × 150 × 8`; the benchmark extracts zero-based rows 30–129 and flattens each `100 × 8` window to 800 features. The original normalization implementation was not retained. The normalized files are therefore the starting point for reproducing the reported classification analysis; the release does not reconstruct normalization from raw exports.
 
@@ -23,7 +23,7 @@ Raw exports contain eight sensor columns and, in some files, two auxiliary colum
 | `code/` | Nested classification, sensitivity, permutation, plotting, and inference checks |
 | `config/` | Analysis seeds, candidate settings, and numeric representation |
 | `results/` | Reference out-of-fold predictions, selections, metrics, and null distributions |
-| `hardware/` | C1 fixed-point linear reference and C2 quantized spiking reference |
+| `hardware/` | C1 fixed-point linear reference, C2 quantized spiking reference, and original FPGA user RTL/weights |
 
 See [DATA_DICTIONARY.md](DATA_DICTIONARY.md) for column definitions and [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for all run commands.
 
@@ -66,4 +66,4 @@ These findings apply to the retained archive. The data do not provide prospectiv
 
 Authors: Xing Kang, Tong Yang, and Bin Ai. School of Microelectronic and Communication Engineering, Chongqing University, Chongqing 400044, China. Contact: Bin Ai, binai@cqu.edu.cn; ORCID [0000-0002-0502-9166](https://orcid.org/0000-0002-0502-9166).
 
-Use [CITATION.cff](CITATION.cff) to cite this version. Data, reference results, and documentation are licensed under [CC BY 4.0](LICENSE-DATA.md). Code and SystemVerilog are licensed under [MIT](LICENSE). The manuscript is cited as an accompanying work; this repository does not assert its publication status.
+Use [CITATION.cff](CITATION.cff) to cite this version. Data, reference results, and documentation are licensed under [CC BY 4.0](LICENSE-DATA.md). Code and SystemVerilog are licensed under [MIT](LICENSE).

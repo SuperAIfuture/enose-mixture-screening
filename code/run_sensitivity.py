@@ -27,6 +27,7 @@ def write_csv(path, frame):
     path.parent.mkdir(parents=True,exist_ok=True)
     frame.to_csv(path,index=False,encoding="utf8",lineterminator="\n")
 
+@dataclass(frozen=True)
 class Condition:
     condition_id: str
     analysis_family: str
