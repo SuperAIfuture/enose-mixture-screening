@@ -66,4 +66,4 @@ These findings apply to the retained archive. The data do not provide prospectiv
 
 Authors: Xing Kang, Tong Yang, and Bin Ai. School of Microelectronic and Communication Engineering, Chongqing University, Chongqing 400044, China. Contact: Bin Ai, binai@cqu.edu.cn; ORCID [0000-0002-0502-9166](https://orcid.org/0000-0002-0502-9166).
 
-Use [CITATION.cff](CITATION.cff) to cite this version. Data, reference results, and documentation are licensed under [CC BY 4.0](LICENSE-DATA.md). Code and SystemVerilog are licensed under [MIT](LICENSE).
+Version 1.0.0 DOI: [10.5281/zenodo.23316049](https://doi.org/10.5281/zenodo.23316049). The [Zenodo record](https://zenodo.org/records/23316049) preserves the release archive. Use [CITATION.cff](CITATION.cff) to cite this version. Data, reference results, and documentation are licensed under [CC BY 4.0](LICENSE-DATA.md). Code and SystemVerilog are licensed under [MIT](LICENSE).

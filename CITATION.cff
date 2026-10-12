@@ -3,6 +3,7 @@ message: "Please cite this dataset and its accompanying code."
 type: dataset
 title: "Eight-Channel Electronic-Nose Data and Code for Duplicate-Aware Ordered Mixture Screening"
 version: 1.0.0
+doi: "10.5281/zenodo.23316049"
 date-released: 2026-10-12
 authors:
   - family-names: Kang
