@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-08-07T04:33:57.725840Z",
+  "analysis_status": "post_hoc_fixed_hyperparameter_retraining_null",
+  "test_type": "immutable_group_label_permutation_with_model_refit",
+  "model_refit_per_permutation": true,
+  "inner_selection_repeated_per_permutation": false,
+  "outer_split_assignments_reused_exactly": true,
+  "model": {
+    "classifier": "StandardScaler plus multinomial logistic regression",
+    "c": 100.0,
+    "probability_state": "raw",
+    "solver": "lbfgs",
+    "max_iter": 5000,
+    "tolerance": 0.0001
+  },
+  "permutations": 1000,
+  "seed_base": 2026080711,
+  "observed_macro_f1": 0.994283427656777,
+  "null_mean_macro_f1": 0.14122642885698802,
+  "null_sample_standard_deviation_macro_f1": 0.02026217364409028,
+  "null_minimum_macro_f1": 0.07793297292380444,
+  "null_median_macro_f1": 0.14031507896969836,
+  "null_95th_percentile_macro_f1": 0.17553752589451316,
+  "null_99th_percentile_macro_f1": 0.18694138921846457,
+  "null_maximum_macro_f1": 0.23530428951093443,
+  "null_values_at_least_observed": 0,
+  "empirical_p_value": 0.000999000999000999,
+  "source_count": 350,
+  "group_count": 348,
+  "workers": 6,
+  "elapsed_seconds_for_resume_run": 1139.5203163000115,
+  "claim_boundary": "This fixed-hyperparameter retraining null reuses the original outer folds and does not repeat nested C/state selection. It is post hoc and does not establish external generalization.",
+  "input_sha256": {
+    "responses": "2B226C6CA0146651C09655A28E63EF63D4765AFDC8153B6FB8794F830AED0287",
+    "manifest": "48460A8102185354E1F3AE444AB35321490F3DBE517B0BA73ADAC9C263D15B2C",
+    "baseline_oof": "ED4983BC1FE033BD827E6BF48B472980635108C647C292CD5D08BD40128A380E",
+    "fixed_oof_observed": "B70897E5F13C54B3F8E79F03355337A085E832C1BCF9D534EDD15FB3BE8C3176"
+  }
+}

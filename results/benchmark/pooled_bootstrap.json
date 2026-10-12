@@ -1,0 +1,9 @@
+{
+  "resamples": 10000,
+  "seed": 2026080703,
+  "point_estimate": 0.994283427656777,
+  "ci95_lower": 0.9856784819190835,
+  "ci95_upper": 1.0,
+  "bootstrap_mean": 0.9943180538953952,
+  "bootstrap_standard_deviation": 0.003947588577934394
+}

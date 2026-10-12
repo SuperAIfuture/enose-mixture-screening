@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "analysis_status": "post_hoc_sensitivity",
+  "condition_id": "time_t080_all8",
+  "analysis_family": "time_window",
+  "start_row_zero_based": 30,
+  "time_points": 80,
+  "retained_channels_zero_based": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "deduplicate": false,
+  "feature_count": 640,
+  "source_count": 350,
+  "group_count": 348,
+  "outer_group_overlap_count": 0,
+  "inner_group_overlap_count": 0,
+  "elapsed_seconds": 59.02104709998821
+}

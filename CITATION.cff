@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "Please cite this dataset and its accompanying code."
+type: dataset
+title: "Eight-Channel Electronic-Nose Data and Code for Duplicate-Aware Ordered Mixture Screening"
+version: 1.0.0
+date-released: 2026-10-12
+authors:
+  - family-names: Kang
+    given-names: Xing
+    affiliation: Chongqing University
+  - family-names: Yang
+    given-names: Tong
+    affiliation: Chongqing University
+  - family-names: Ai
+    given-names: Bin
+    affiliation: Chongqing University
+    orcid: "https://orcid.org/0000-0002-0502-9166"
+repository-code: "https://github.com/SuperAIfuture/enose-mixture-screening"
+url: "https://github.com/SuperAIfuture/enose-mixture-screening"
+license: CC-BY-4.0
+keywords:
+  - electronic nose
+  - mixture screening
+  - grouped cross-validation
+  - duplicate-aware evaluation
+  - fixed-point inference

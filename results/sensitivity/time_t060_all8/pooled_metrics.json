@@ -1,0 +1,85 @@
+{
+  "sample_or_group_count": 348,
+  "accuracy": 0.9885057471264368,
+  "balanced_accuracy": 0.9885714285714285,
+  "macro_f1": 0.988506742903347,
+  "per_class_recall": [
+    1.0,
+    1.0,
+    0.94,
+    0.98,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "expected_calibration_error": 0.0082745061623229,
+  "multiclass_brier_score": 0.016244726280707392,
+  "ordinal_step_mae": 0.011494252873563218,
+  "errors_within_one_ordinal_step_fraction": 1.0,
+  "adjacent_ordinal_error_fraction": 1.0,
+  "confusion_matrix": [
+    [
+      50,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      50,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      47,
+      3,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      49,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      48,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      50,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      50
+    ]
+  ]
+}

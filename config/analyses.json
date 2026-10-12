@@ -1,0 +1,56 @@
+{
+  "feature_start_row_zero_based": 30,
+  "time_window_lengths": [
+    40,
+    60,
+    80,
+    100
+  ],
+  "sensor_channels_zero_based": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "duplicate_sensitivity": {
+    "retention_rule": "lexicographically_first_source_id_per_group",
+    "expected_source_count": 348,
+    "expected_group_count": 348
+  },
+  "permutation_test": {
+    "permutations": 1000,
+    "seed_base": 2026080711,
+    "fixed_c": 100.0,
+    "probability_state": "raw",
+    "outer_split_rule": "reuse_frozen_c1_outer_fold_assignments",
+    "label_unit": "immutable_group",
+    "test_type": "fixed_oof_decision_label_association_permutation",
+    "model_refit_per_permutation": false,
+    "empirical_p_rule": "(1 + count(null_macro_f1 >= observed_macro_f1)) / (permutations + 1)"
+  },
+  "full_pipeline_permutation": {
+    "permutations": 1000,
+    "seed_base": 2026080711,
+    "fixed_c": 100.0,
+    "probability_state": "raw",
+    "model_refit_per_permutation": true,
+    "inner_selection_repeated_per_permutation": false,
+    "outer_split_rule": "reuse_frozen_c1_outer_fold_assignments",
+    "solver": "lbfgs",
+    "max_iter": 5000,
+    "tolerance": 0.0001
+  },
+  "fixed_point": {
+    "input_width_bits": 12,
+    "input_scale": 4095,
+    "weight_width_bits": 24,
+    "maximum_weight_fractional_bits": 20,
+    "accumulator_width_bits": 64,
+    "feature_count": 800,
+    "class_count": 7
+  }
+}

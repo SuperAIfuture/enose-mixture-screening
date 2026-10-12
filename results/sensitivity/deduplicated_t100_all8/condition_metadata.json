@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "analysis_status": "post_hoc_sensitivity",
+  "condition_id": "deduplicated_t100_all8",
+  "analysis_family": "duplicate_group_sensitivity",
+  "start_row_zero_based": 30,
+  "time_points": 100,
+  "retained_channels_zero_based": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "deduplicate": true,
+  "feature_count": 800,
+  "source_count": 348,
+  "group_count": 348,
+  "outer_group_overlap_count": 0,
+  "inner_group_overlap_count": 0,
+  "elapsed_seconds": 66.36630130000412
+}

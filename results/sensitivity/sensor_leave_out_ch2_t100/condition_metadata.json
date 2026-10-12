@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "analysis_status": "post_hoc_sensitivity",
+  "condition_id": "sensor_leave_out_ch2_t100",
+  "analysis_family": "sensor_leave_one_out",
+  "start_row_zero_based": 30,
+  "time_points": 100,
+  "retained_channels_zero_based": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "deduplicate": false,
+  "feature_count": 700,
+  "source_count": 350,
+  "group_count": 348,
+  "outer_group_overlap_count": 0,
+  "inner_group_overlap_count": 0,
+  "elapsed_seconds": 55.17858010000782
+}

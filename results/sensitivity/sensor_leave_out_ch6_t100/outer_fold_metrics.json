@@ -1,0 +1,457 @@
+[
+  {
+    "outer_fold": 1,
+    "outer_train_sources": 280,
+    "outer_test_sources": 70,
+    "selected_c": 10.0,
+    "selected_probability_state": "temperature_scaled",
+    "fitted_temperature": 0.08427292157726618,
+    "sample_or_group_count": 69,
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "macro_f1": 1.0,
+    "per_class_recall": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "expected_calibration_error": 3.192335285007175e-12,
+    "multiclass_brier_score": 1.39415985829208e-21,
+    "ordinal_step_mae": 0.0,
+    "errors_within_one_ordinal_step_fraction": 1.0,
+    "adjacent_ordinal_error_fraction": 0.0,
+    "confusion_matrix": [
+      [
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        10,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        11
+      ]
+    ]
+  },
+  {
+    "outer_fold": 2,
+    "outer_train_sources": 281,
+    "outer_test_sources": 69,
+    "selected_c": 100.0,
+    "selected_probability_state": "temperature_scaled",
+    "fitted_temperature": 0.1198414089095663,
+    "sample_or_group_count": 69,
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "macro_f1": 1.0,
+    "per_class_recall": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "expected_calibration_error": 6.661338147750939e-16,
+    "multiclass_brier_score": 4.5750820672833943e-29,
+    "ordinal_step_mae": 0.0,
+    "errors_within_one_ordinal_step_fraction": 1.0,
+    "adjacent_ordinal_error_fraction": 0.0,
+    "confusion_matrix": [
+      [
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        11,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        11,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        9,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        10,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        11
+      ]
+    ]
+  },
+  {
+    "outer_fold": 3,
+    "outer_train_sources": 279,
+    "outer_test_sources": 71,
+    "selected_c": 100.0,
+    "selected_probability_state": "temperature_scaled",
+    "fitted_temperature": 0.11833362270297952,
+    "sample_or_group_count": 70,
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "macro_f1": 1.0,
+    "per_class_recall": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "expected_calibration_error": 7.859818351718673e-10,
+    "multiclass_brier_score": 8.648743011842361e-17,
+    "ordinal_step_mae": 0.0,
+    "errors_within_one_ordinal_step_fraction": 1.0,
+    "adjacent_ordinal_error_fraction": 0.0,
+    "confusion_matrix": [
+      [
+        11,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        9,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        10,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        10,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        11,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9
+      ]
+    ]
+  },
+  {
+    "outer_fold": 4,
+    "outer_train_sources": 280,
+    "outer_test_sources": 70,
+    "selected_c": 100.0,
+    "selected_probability_state": "raw",
+    "fitted_temperature": 1.0,
+    "sample_or_group_count": 70,
+    "accuracy": 0.9714285714285714,
+    "balanced_accuracy": 0.9727272727272728,
+    "macro_f1": 0.9737737200143216,
+    "per_class_recall": [
+      1.0,
+      1.0,
+      1.0,
+      0.9,
+      1.0,
+      0.9090909090909091,
+      1.0
+    ],
+    "expected_calibration_error": 0.023778715839457572,
+    "multiclass_brier_score": 0.02709938610079617,
+    "ordinal_step_mae": 0.02857142857142857,
+    "errors_within_one_ordinal_step_fraction": 1.0,
+    "adjacent_ordinal_error_fraction": 1.0,
+    "confusion_matrix": [
+      [
+        11,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        9,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        9,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        11,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8
+      ]
+    ]
+  },
+  {
+    "outer_fold": 5,
+    "outer_train_sources": 280,
+    "outer_test_sources": 70,
+    "selected_c": 100.0,
+    "selected_probability_state": "temperature_scaled",
+    "fitted_temperature": 0.1182570348324535,
+    "sample_or_group_count": 70,
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "macro_f1": 1.0,
+    "per_class_recall": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "expected_calibration_error": 6.847855615887966e-13,
+    "multiclass_brier_score": 6.116152780523365e-23,
+    "ordinal_step_mae": 0.0,
+    "errors_within_one_ordinal_step_fraction": 1.0,
+    "adjacent_ordinal_error_fraction": 0.0,
+    "confusion_matrix": [
+      [
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        11,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        11
+      ]
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "outer_seed": 2026080701,
+  "inner_seed_base": 2026080702,
+  "outer_folds": 5,
+  "inner_folds": 4,
+  "candidate_c": [
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "candidate_probability_states": [
+    "raw",
+    "temperature_scaled"
+  ],
+  "macro_f1_tie_tolerance": 0.002,
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 2026080703,
+  "thresholds": {
+    "macro_f1_min": 0.95,
+    "macro_f1_ci95_lower_min": 0.92,
+    "ece_max": 0.05,
+    "brier_max": 0.08,
+    "ordinal_step_mae_max": 0.1
+  }
+}

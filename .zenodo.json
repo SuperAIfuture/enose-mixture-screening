@@ -1,0 +1,35 @@
+{
+  "title": "Eight-Channel Electronic-Nose Data and Code for Duplicate-Aware Ordered Mixture Screening",
+  "upload_type": "dataset",
+  "description": "Raw electronic-nose measurements (550 files, 11 composition labels), selected normalized eight-channel responses (350 sources, 348 file/byte-duplicate groups), nested grouped classification code and reference results, and integer/RTL inference reference packages for ordered Danggui–Duhuo mixture screening. Code is MIT licensed; data and documentation are CC BY 4.0.",
+  "creators": [
+    {
+      "name": "Kang, Xing",
+      "affiliation": "Chongqing University"
+    },
+    {
+      "name": "Yang, Tong",
+      "affiliation": "Chongqing University"
+    },
+    {
+      "name": "Ai, Bin",
+      "affiliation": "Chongqing University",
+      "orcid": "0000-0002-0502-9166"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "version": "1.0.0",
+  "keywords": [
+    "electronic nose",
+    "mixture screening",
+    "grouped cross-validation",
+    "fixed-point inference"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/SuperAIfuture/enose-mixture-screening",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
