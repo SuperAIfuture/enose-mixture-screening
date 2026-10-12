@@ -1,0 +1,98 @@
+{
+  "data": {
+    "formal_source_count": 350,
+    "class_count": 7,
+    "sources_per_class": 50,
+    "response_shape": [
+      150,
+      8
+    ],
+    "input_row_start_inclusive": 30,
+    "input_row_stop_exclusive": 130,
+    "input_features": 800,
+    "time_steps": 30,
+    "duplicate_group_policy": "Within-class byte-identical response files share one immutable group_id."
+  },
+  "splitting": {
+    "strategy": "class-stratified immutable-group split",
+    "train_fraction": 0.7,
+    "validation_fraction": 0.1,
+    "test_fraction": 0.2,
+    "split_seeds": [
+      2026080601,
+      2026080602,
+      2026080603,
+      2026080604,
+      2026080605
+    ],
+    "primary_split_id": "split_01",
+    "primary_reporting_rule": "Headline metrics and the group-bootstrap confidence interval use split_01, fixed before model results. The arithmetic mean, standard deviation, minimum, and maximum across all five splits are reported as robustness results and never replace the split_01 headline.",
+    "c2_vector_pack_rule": "Use every unaugmented held-out source in split_01. No post-result vector selection is permitted.",
+    "grouped_prediction_rule": "Average class probabilities within each immutable group before the argmax; grouped metrics weight each immutable group once."
+  },
+  "model_selection": {
+    "candidate_widths": [
+      0,
+      32,
+      64,
+      128
+    ],
+    "width_zero_meaning": "trainable direct 800-to-7 baseline",
+    "training_seeds": [
+      314159,
+      271828,
+      161803
+    ],
+    "selection_metric": "mean validation macro-F1 across five splits and three training seeds",
+    "tie_tolerance_macro_f1": 0.005,
+    "validation_ece_definition": "Mean uncalibrated group-level ECE from the fixed post-training validation encoding repeats for each run.",
+    "tie_breakers": [
+      "lower validation expected calibration error",
+      "smaller hidden width",
+      "higher verified structured sparsity"
+    ]
+  },
+  "training": {
+    "spike_encoding": "30-step Bernoulli rate coding from clipped normalized response values",
+    "spike_probability_scale": 0.5,
+    "neurons": "LIF hidden and output neurons",
+    "training_mode": "offline surrogate-gradient training; fixed weights during inference",
+    "quantization": "symmetric signed int8 quantization-aware training for weights and integer-compatible membrane updates",
+    "augmentation_scope": "training partitions only; donors must belong to the same training partition and class",
+    "augmentation_views_per_source": 4,
+    "parent_view_consistency": true,
+    "ordinal_distance_loss": true,
+    "structured_sparsity": "fixed 2:4 semi-structured magnitude mask formed once from each layer's initialized weight magnitudes and then held constant throughout training and inference",
+    "optimizer": "AdamW",
+    "learning_rate": 0.003,
+    "weight_decay": 0.0001,
+    "batch_size": 64,
+    "maximum_epochs": 60,
+    "early_stopping_patience": 10,
+    "cross_entropy_weight": 1.0,
+    "ordinal_loss_weight": 0.2,
+    "parent_view_consistency_weight": 0.2,
+    "evaluation_encoding_repeats": 3,
+    "early_stopping_metric": "grouped validation macro-F1"
+  },
+  "metrics": {
+    "primary": "group-level macro-F1 after within-group probability averaging",
+    "secondary": [
+      "accuracy",
+      "balanced accuracy",
+      "per-class recall",
+      "expected calibration error",
+      "multiclass Brier score",
+      "adjacent-ratio confusion fraction",
+      "ordinal step MAE"
+    ],
+    "bootstrap_resamples": 10000,
+    "bootstrap_unit": "immutable source group stratified within class",
+    "readiness_macro_f1_min": 0.85,
+    "readiness_ci95_lower_min": 0.8
+  },
+  "final_prediction": {
+    "seed_ensemble_rule": "For each split, average validation-calibrated test probabilities from the three predeclared training seeds before group aggregation and argmax.",
+    "c2_primary_training_seed": 314159
+  }
+}
